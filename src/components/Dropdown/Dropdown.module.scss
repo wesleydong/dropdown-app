@@ -1,0 +1,52 @@
+@use '../../css/colors' as *;
+
+.dropdownContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown {
+  border: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  width: 400px;
+  font-size: 16px;
+  overflow-x: auto;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.listContainer {
+  border: 1px solid gray;
+  border-top: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 0 4px;
+  padding: 8px;
+  max-height: 400px;
+  overflow: auto
+}
+
+button {
+  background-color: $background;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+  height: 36px;
+}
+button:hover {
+  background-color: lighten($background, 5%);
+  cursor: pointer;
+}

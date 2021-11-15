@@ -1,0 +1,18 @@
+@use '../../css/colors' as *;
+
+.item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding: 8px 0;
+  border-bottom: 1px solid gray;
+}
+
+.item:hover {
+  background-color: lighten($background, 5%);
+  cursor: pointer;
+}
+
+.checkbox {
+  margin-right: 4px;
+}
